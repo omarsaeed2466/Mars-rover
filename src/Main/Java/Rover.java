@@ -64,12 +64,12 @@ return sb.toString();
 
 
 
-    public void processInstruction(Instruction[] instruction){
-        for (Instruction i : instruction){
+    public void processInstruction(Instructions[] instruction){
+        for (Instructions i : instruction){
             processInstruction(i);
         }
     }
-    private void processInstruction(Instruction instruction){
+    private void processInstruction(Instructions instruction){
         if (position == null || heading == null) {
             throw new NotDroppedException();
         }
